@@ -1,15 +1,667 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="generator" content="Hexo 5.3.0"><meta name="theme" content="hexo-theme-yun"><title>大鹏的个人博客</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.22/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
-  [".post-card",".post-content img"].forEach((target)=> {
-    ScrollReveal().reveal(target);
-  })
-});
-</script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/js/ui/banner.js" as="script"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script id="yun-config">
-    const Yun = window.Yun || {};
-    window.CONFIG = {"hostname":"example.com","root":"/","title":"大鹏的小p站","version":"1.3.0","mode":"auto","copycode":true,"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
-  </script><meta property="og:type" content="website">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="大鹏的个人博客">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="大鹏的个人博客">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body class="is-home"><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><div class="sidebar-panel sidebar-panel-active" id="site-overview-wrap"><div class="site-info"><a class="site-author-avatar" href="/about/" title="John Doe"><img width="96" loading="lazy" src="/Yun.png" alt="John Doe"></a><div class="site-author-name"><a href="/about/">John Doe</a></div><a class="site-name" href="/about/site.html">大鹏的个人博客</a><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://qm.qq.com/cgi-bin/qm/qr?k=epvxdq1sknJe9JMj6J1LsBw4a6cI_2ln&amp;jump_from=webapi" title="QQ 群 389401003" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/YunYouJun" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://weibo.com/jizhideyunyoujun" title="微博" target="_blank" style="color:#E6162D"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.douban.com/people/yunyoujun/" title="豆瓣" target="_blank" style="color:#007722"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-douban-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=247102977" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/yunyoujun/" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/1579790" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/YunYouJun" title="Twitter" target="_blank" style="color:#1da1f2"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-twitter-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/elpsycn" title="Telegram Channel" target="_blank" style="color:#0088CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-telegram-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:me@yunyoujun.cn" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.now.sh/" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div></aside><main class="sidebar-translate" id="content"><div id="banner"><div class="banner-line vertical-line-top"></div><div class="banner-line vertical-line-bottom"></div><div class="cloud"><svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" fill="white"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0" opacity="0.7"></use><use xlink:href="#gentle-wave" x="48" y="3" opacity="0.5"></use><use xlink:href="#gentle-wave" x="48" y="5" opacity="0.3"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><a id="goDown" aria-label="go-down" href="javascript:window.scrollTo(0, banner.clientHeight);"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-down-s-line"></use></svg></a></div><script src="/js/ui/banner.js"></script><div id="say"><span id="say-content"></span><small id="say-author"></small><small id="say-from"></small></div><script async src="/js/say.js"></script><section class="hty-layout-grid" id="recent-posts"><div class="hty-layout-grid__cell hty-layout-grid__cell--span-12"><article class="hty-card post-card" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://example.com/2020/12/30/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="John Doe"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="大鹏的个人博客"></span><div class="post-card-header"><header class="post-header"><h2 class="post-title" itemprop="name headline"><a class="post-title-link" itemprop="url" href="/2020/12/30/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/">算法学习</a></h2><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2020-12-30 20:03:36" itemprop="dateCreated datePublished" datetime="2020-12-30T20:03:36+08:00">2020-12-30</time></div></div></header></div><div class="post-card-content text-center"><div class="post-card-excerpt markdown-body"></div></div><div class="hty-card__actions post-card__actions"><div class="post-card-category"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span></div><div class="post-card-tag"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span></div></div></article></div><div class="hty-layout-grid__cell hty-layout-grid__cell--span-12"><article class="hty-card post-card" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://example.com/2020/12/30/Test-Passage/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="John Doe"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="大鹏的个人博客"></span><div class="post-card-header"><header class="post-header"><h2 class="post-title" itemprop="name headline"><a class="post-title-link" itemprop="url" href="/2020/12/30/Test-Passage/">大鹏的个人博客</a></h2><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2020-12-30 15:55:10" itemprop="dateCreated datePublished" datetime="2020-12-30T15:55:10+08:00">2020-12-30</time></div></div></header></div><div class="post-card-content text-center"><div class="post-card-excerpt markdown-body"></div></div><div class="hty-card__actions post-card__actions"><div class="post-card-category"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span></div><div class="post-card-tag"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span></div></div></article></div><div class="hty-layout-grid__cell hty-layout-grid__cell--span-12"><article class="hty-card post-card" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://example.com/2020/12/30/hello-world/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="John Doe"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="大鹏的个人博客"></span><div class="post-card-header"><header class="post-header"><h2 class="post-title" itemprop="name headline"><a class="post-title-link" itemprop="url" href="/2020/12/30/hello-world/">Hello World</a></h2><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2020-12-30 15:43:42" itemprop="dateCreated datePublished" datetime="2020-12-30T15:43:42+08:00">2020-12-30</time></div></div></header></div><div class="post-card-content text-center"><div class="post-card-excerpt markdown-body"></div></div><div class="hty-card__actions post-card__actions"><div class="post-card-category"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span></div><div class="post-card-tag"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span></div></div></article></div></section></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2020 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> John Doe</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v5.3.0</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.3.0</span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></div><script defer src="/js/utils.js"></script><script defer src="/js/hexo-theme-yun.js"></script></body></html>
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>大鹏的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">大鹏的个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/30/%E8%80%81%E9%A9%AC%E6%9D%A5%E4%BA%A4%E9%92%B1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大鹏的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/30/%E8%80%81%E9%A9%AC%E6%9D%A5%E4%BA%A4%E9%92%B1/" class="post-title-link" itemprop="url">老马来交钱</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-12-30 21:34:56 / Modified: 21:38:45" itemprop="dateCreated datePublished" datetime="2020-12-30T21:34:56+08:00">2020-12-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="交税空间"><a href="#交税空间" class="headerlink" title="交税空间"></a>交税空间</h1><blockquote>
+<p> <code>mazhiping</code>  赶紧的, 麻溜的…</p>
+</blockquote>
+<blockquote>
+<p>点击下面的==Donate==</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/30/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大鹏的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/30/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">算法学习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-12-30 20:03:36 / Modified: 20:04:23" itemprop="dateCreated datePublished" datetime="2020-12-30T20:03:36+08:00">2020-12-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <img src="https://i.loli.net/2020/12/23/JFidNtjkCz61cuD.png" alt="image-20201223135255978" style="zoom: 67%;" />
+
+<h1 id="编码能力提升"><a href="#编码能力提升" class="headerlink" title="编码能力提升"></a>编码能力提升</h1><h2 id="1-3或5的倍数"><a href="#1-3或5的倍数" class="headerlink" title="1. 3或5的倍数"></a>1. 3或5的倍数</h2><blockquote>
+<p>在小于10的自然数中，3或5的倍数有3、5、6和9，这些数之和是23。求小于1000的自然数中所有3或5的倍数之和。</p>
+</blockquote>
+<p><code>解法一</code><img src="https://i.loli.net/2020/12/22/zQEaPBfRXxeIYAw.png" alt="image-20201222191551981" style="zoom: 67%;" /></p>
+<p><code>解法二</code><img src="https://i.loli.net/2020/12/22/uahFfj8xVolNRHD.png" alt="image-20201222192331222" style="zoom: 67%;" /></p>
+<h2 id="2-偶斐波那契数"><a href="#2-偶斐波那契数" class="headerlink" title="2. 偶斐波那契数"></a><strong>2. 偶斐波那契数</strong></h2><blockquote>
+<p>斐波那契数列中的每一项都是前两项的和。由1和2开始生成的斐波那契数列的前10项为：</p>
+<p>​                                1,2,3,5,8,13,21,34,55,89,…</p>
+<p>考虑该斐波那契数列中不超过四百万的项，求其中为偶数的项之和。</p>
+</blockquote>
+<p><code>方法一</code><img src="https://i.loli.net/2020/12/22/FkBCfWvwJRNXHPo.png" alt="image-20201222194324066" style="zoom: 67%;" /></p>
+<p><code>方法二</code><img src="https://i.loli.net/2020/12/23/5emNfJcC9AM3Zyb.png" alt="image-20201223150600232" style="zoom: 67%;" /></p>
+<h2 id="3-最大回文乘积"><a href="#3-最大回文乘积" class="headerlink" title="3. 最大回文乘积"></a>3. <strong>最大回文乘积</strong></h2><blockquote>
+<p>回文数就是从前往后读和从后往前读都一样的数。由两个2位数相乘得到的最大的回文数是 9009=91×99。求由两个3位数相乘得到的最大的回文数。</p>
+</blockquote>
+<img src="https://i.loli.net/2020/12/22/gFweA86ZXjzVafI.png" alt="image-20201222201859564" style="zoom:67%;" />
+
+<p><code>方法一</code><img src="https://i.loli.net/2020/12/22/bc4XOPfeImlMG3K.png" alt="image-20201222201837178" style="zoom: 67%;" /></p>
+<p><code>方法二</code><img src="https://i.loli.net/2020/12/23/BtkF1cvyiPsGwOr.png" alt="image-20201223141800449" style="zoom:67%;" /></p>
+<h2 id="4-平方的和与和的平方之差"><a href="#4-平方的和与和的平方之差" class="headerlink" title="4. 平方的和与和的平方之差"></a>4. <strong>平方的和与和的平方之差</strong></h2><blockquote>
+<p>前十个自然数的平方的和是</p>
+<p>1^2^+2^2^+…+10^2^=385</p>
+<p>前十个自然数的和的平方是</p>
+<p>(1+2+…+10)^2^=55^2^=3025</p>
+<p>因此，前十个数的平方的和与和的平方之差是3025−385=2640。</p>
+<p>求前一百个数的平方的和与和的平方之差。</p>
+</blockquote>
+<img src="https://i.loli.net/2020/12/22/kjKgFH9wtdmQpCX.png" alt="image-20201222202957035" style="zoom: 67%;" />
+
+<h2 id="5-连续数字最大乘积-滑动窗口法"><a href="#5-连续数字最大乘积-滑动窗口法" class="headerlink" title="5.连续数字最大乘积[滑动窗口法]"></a>5.<strong>连续数字最大乘积[滑动窗口法]</strong></h2><blockquote>
+<p>在如下的1000位数中，连续四个数字的最大乘积是 9×9×8×9=5832。</p>
+<p>73167176531330624919225119674426574742355349194934 96983520312774506326239578318016984801869478851843 85861560789112949495459501737958331952853208805511 12540698747158523863050715693290963295227443043557 66896648950445244523161731856403098711121722383113 62229893423380308135336276614282806444486645238749 30358907296290491560440772390713810515859307960866 70172427121883998797908792274921901699720888093776 65727333001053367881220235421809751254540594752243 52584907711670556013604839586446706324415722155397 53697817977846174064955149290862569321978468622482 83972241375657056057490261407972968652414535100474 82166370484403199890008895243450658541227588666881 16427171479924442928230863465674813919123162824586 17866458359124566529476545682848912883142607690042 24219022671055626321111109370544217506941658960408 07198403850962455444362981230987879927244284909188 84580156166097919133875499200524063689912560717606 05886116467109405077541002256983155200055935729725 71636269561882670428252483600823257530420752963450</p>
+<p>求这个1000位数中连续十三个数字的最大乘积。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/12/23/gcpxYEehqP7nuZy.png" alt="image-20201223144804132"></p>
+<h2 id="6-方阵中的最大乘积"><a href="#6-方阵中的最大乘积" class="headerlink" title="6.方阵中的最大乘积"></a>6.<strong>方阵中的最大乘积</strong></h2><blockquote>
+<p>在如下的20×20方阵中，有四个呈对角线排列的数被标记为红色。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">08</span> <span class="number">02</span> <span class="number">22</span> <span class="number">97</span> <span class="number">38</span> <span class="number">15</span> <span class="number">00</span> <span class="number">40</span> <span class="number">00</span> <span class="number">75</span> <span class="number">04</span> <span class="number">05</span> <span class="number">07</span> <span class="number">78</span> <span class="number">52</span> <span class="number">12</span> <span class="number">50</span> <span class="number">77</span> <span class="number">91</span> <span class="number">08</span></span><br><span class="line"><span class="number">49</span> <span class="number">49</span> <span class="number">99</span> <span class="number">40</span> <span class="number">17</span> <span class="number">81</span> <span class="number">18</span> <span class="number">57</span> <span class="number">60</span> <span class="number">87</span> <span class="number">17</span> <span class="number">40</span> <span class="number">98</span> <span class="number">43</span> <span class="number">69</span> <span class="number">48</span> <span class="number">04</span> <span class="number">56</span> <span class="number">62</span> <span class="number">00</span></span><br><span class="line"><span class="number">81</span> <span class="number">49</span> <span class="number">31</span> <span class="number">73</span> <span class="number">55</span> <span class="number">79</span> <span class="number">14</span> <span class="number">29</span> <span class="number">93</span> <span class="number">71</span> <span class="number">40</span> <span class="number">67</span> <span class="number">53</span> <span class="number">88</span> <span class="number">30</span> <span class="number">03</span> <span class="number">49</span> <span class="number">13</span> <span class="number">36</span> <span class="number">65</span></span><br><span class="line"><span class="number">52</span> <span class="number">70</span> <span class="number">95</span> <span class="number">23</span> <span class="number">04</span> <span class="number">60</span> <span class="number">11</span> <span class="number">42</span> <span class="number">69</span> <span class="number">24</span> <span class="number">68</span> <span class="number">56</span> <span class="number">01</span> <span class="number">32</span> <span class="number">56</span> <span class="number">71</span> <span class="number">37</span> <span class="number">02</span> <span class="number">36</span> <span class="number">91</span></span><br><span class="line"><span class="number">22</span> <span class="number">31</span> <span class="number">16</span> <span class="number">71</span> <span class="number">51</span> <span class="number">67</span> <span class="number">63</span> <span class="number">89</span> <span class="number">41</span> <span class="number">92</span> <span class="number">36</span> <span class="number">54</span> <span class="number">22</span> <span class="number">40</span> <span class="number">40</span> <span class="number">28</span> <span class="number">66</span> <span class="number">33</span> <span class="number">13</span> <span class="number">80</span></span><br><span class="line"><span class="number">24</span> <span class="number">47</span> <span class="number">32</span> <span class="number">60</span> <span class="number">99</span> <span class="number">03</span> <span class="number">45</span> <span class="number">02</span> <span class="number">44</span> <span class="number">75</span> <span class="number">33</span> <span class="number">53</span> <span class="number">78</span> <span class="number">36</span> <span class="number">84</span> <span class="number">20</span> <span class="number">35</span> <span class="number">17</span> <span class="number">12</span> <span class="number">50</span></span><br><span class="line"><span class="number">32</span> <span class="number">98</span> <span class="number">81</span> <span class="number">28</span> <span class="number">64</span> <span class="number">23</span> <span class="number">67</span> <span class="number">10</span> *<span class="number">26</span> <span class="number">38</span> <span class="number">40</span> <span class="number">67</span> <span class="number">59</span> <span class="number">54</span> <span class="number">70</span> <span class="number">66</span> <span class="number">18</span> <span class="number">38</span> <span class="number">64</span> <span class="number">70</span></span><br><span class="line"><span class="number">67</span> <span class="number">26</span> <span class="number">20</span> <span class="number">68</span> <span class="number">02</span> <span class="number">62</span> <span class="number">12</span> <span class="number">20</span> <span class="number">95</span> *<span class="number">63</span> <span class="number">94</span> <span class="number">39</span> <span class="number">63</span> <span class="number">08</span> <span class="number">40</span> <span class="number">91</span> <span class="number">66</span> <span class="number">49</span> <span class="number">94</span> <span class="number">21</span></span><br><span class="line"><span class="number">24</span> <span class="number">55</span> <span class="number">58</span> <span class="number">05</span> <span class="number">66</span> <span class="number">73</span> <span class="number">99</span> <span class="number">26</span> <span class="number">97</span> <span class="number">17</span> *<span class="number">78</span> <span class="number">78</span> <span class="number">96</span> <span class="number">83</span> <span class="number">14</span> <span class="number">88</span> <span class="number">34</span> <span class="number">89</span> <span class="number">63</span> <span class="number">72</span></span><br><span class="line"><span class="number">21</span> <span class="number">36</span> <span class="number">23</span> <span class="number">09</span> <span class="number">75</span> <span class="number">00</span> <span class="number">76</span> <span class="number">44</span> <span class="number">20</span> <span class="number">45</span> <span class="number">35</span> *<span class="number">14</span> <span class="number">00</span> <span class="number">61</span> <span class="number">33</span> <span class="number">97</span> <span class="number">34</span> <span class="number">31</span> <span class="number">33</span> <span class="number">95</span></span><br><span class="line"><span class="number">78</span> <span class="number">17</span> <span class="number">53</span> <span class="number">28</span> <span class="number">22</span> <span class="number">75</span> <span class="number">31</span> <span class="number">67</span> <span class="number">15</span> <span class="number">94</span> <span class="number">03</span> <span class="number">80</span> <span class="number">04</span> <span class="number">62</span> <span class="number">16</span> <span class="number">14</span> <span class="number">09</span> <span class="number">53</span> <span class="number">56</span> <span class="number">92</span></span><br><span class="line"><span class="number">16</span> <span class="number">39</span> <span class="number">05</span> <span class="number">42</span> <span class="number">96</span> <span class="number">35</span> <span class="number">31</span> <span class="number">47</span> <span class="number">55</span> <span class="number">58</span> <span class="number">88</span> <span class="number">24</span> <span class="number">00</span> <span class="number">17</span> <span class="number">54</span> <span class="number">24</span> <span class="number">36</span> <span class="number">29</span> <span class="number">85</span> <span class="number">57</span> </span><br><span class="line"><span class="number">86</span> <span class="number">56</span> <span class="number">00</span> <span class="number">48</span> <span class="number">35</span> <span class="number">71</span> <span class="number">89</span> <span class="number">07</span> <span class="number">05</span> <span class="number">44</span> <span class="number">44</span> <span class="number">37</span> <span class="number">44</span> <span class="number">60</span> <span class="number">21</span> <span class="number">58</span> <span class="number">51</span> <span class="number">54</span> <span class="number">17</span> <span class="number">58</span></span><br><span class="line"><span class="number">19</span> <span class="number">80</span> <span class="number">81</span> <span class="number">68</span> <span class="number">05</span> <span class="number">94</span> <span class="number">47</span> <span class="number">69</span> <span class="number">28</span> <span class="number">73</span> <span class="number">92</span> <span class="number">13</span> <span class="number">86</span> <span class="number">52</span> <span class="number">17</span> <span class="number">77</span> <span class="number">04</span> <span class="number">89</span> <span class="number">55</span> <span class="number">40</span></span><br><span class="line"><span class="number">04</span> <span class="number">52</span> <span class="number">08</span> <span class="number">83</span> <span class="number">97</span> <span class="number">35</span> <span class="number">99</span> <span class="number">16</span> <span class="number">07</span> <span class="number">97</span> <span class="number">57</span> <span class="number">32</span> <span class="number">16</span> <span class="number">26</span> <span class="number">26</span> <span class="number">79</span> <span class="number">33</span> <span class="number">27</span> <span class="number">98</span> <span class="number">66</span></span><br><span class="line"><span class="number">88</span> <span class="number">36</span> <span class="number">68</span> <span class="number">87</span> <span class="number">57</span> <span class="number">62</span> <span class="number">20</span> <span class="number">72</span> <span class="number">03</span> <span class="number">46</span> <span class="number">33</span> <span class="number">67</span> <span class="number">46</span> <span class="number">55</span> <span class="number">12</span> <span class="number">32</span> <span class="number">63</span> <span class="number">93</span> <span class="number">53</span> <span class="number">69</span> </span><br><span class="line"><span class="number">04</span> <span class="number">42</span> <span class="number">16</span> <span class="number">73</span> <span class="number">38</span> <span class="number">25</span> <span class="number">39</span> <span class="number">11</span> <span class="number">24</span> <span class="number">94</span> <span class="number">72</span> <span class="number">18</span> <span class="number">08</span> <span class="number">46</span> <span class="number">29</span> <span class="number">32</span> <span class="number">40</span> <span class="number">62</span> <span class="number">76</span> <span class="number">36</span> </span><br><span class="line"><span class="number">20</span> <span class="number">69</span> <span class="number">36</span> <span class="number">41</span> <span class="number">72</span> <span class="number">30</span> <span class="number">23</span> <span class="number">88</span> <span class="number">34</span> <span class="number">62</span> <span class="number">99</span> <span class="number">69</span> <span class="number">82</span> <span class="number">67</span> <span class="number">59</span> <span class="number">85</span> <span class="number">74</span> <span class="number">04</span> <span class="number">36</span> <span class="number">16</span> </span><br><span class="line"><span class="number">20</span> <span class="number">73</span> <span class="number">35</span> <span class="number">29</span> <span class="number">78</span> <span class="number">31</span> <span class="number">90</span> <span class="number">01</span> <span class="number">74</span> <span class="number">31</span> <span class="number">49</span> <span class="number">71</span> <span class="number">48</span> <span class="number">86</span> <span class="number">81</span> <span class="number">16</span> <span class="number">23</span> <span class="number">57</span> <span class="number">05</span> <span class="number">54</span> </span><br><span class="line"><span class="number">01</span> <span class="number">70</span> <span class="number">54</span> <span class="number">71</span> <span class="number">83</span> <span class="number">51</span> <span class="number">54</span> <span class="number">69</span> <span class="number">16</span> <span class="number">92</span> <span class="number">33</span> <span class="number">48</span> <span class="number">61</span> <span class="number">43</span> <span class="number">52</span> <span class="number">01</span> <span class="number">89</span> <span class="number">19</span> <span class="number">67</span> <span class="number">48</span></span><br></pre></td></tr></table></figure>
+
+<p>这四个数的乘积是26×63×78×14=1788696。</p>
+<p>在这个20×20方阵中，四个呈一直线（竖直、水平或对角线）相邻的数的乘积最大是多少？</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/12/22/vqR79158OGo2rhF.png" alt="image-20201222222506685" style="zoom: 67%;" /><img src="https://i.loli.net/2020/12/22/5KqdRZHcJOEWTya.png" alt="image-20201222222451521" style="zoom: 67%;" /></p>
+<h2 id="7-最长考拉兹序列"><a href="#7-最长考拉兹序列" class="headerlink" title="7. 最长考拉兹序列"></a>7. <strong>最长考拉兹序列</strong></h2><blockquote>
+<p>考虑如下定义在正整数集上的迭代规则：</p>
+<p>n→n/2 （若n为偶数）n→3n+1 （若n为奇数）</p>
+<p>从13开始，可以迭代生成如下的序列：</p>
+<p>13→40→20→10→5→16→8→4→2→1</p>
+<p>可以看出这个序列（从13开始到1结束）共有10项。尽管还未被证明，但普遍认为，从任何数开始最终都能回到1（这被称为“考拉兹猜想”）。</p>
+<p>在小于一百万的数中，从哪个数开始迭代生成的序列最长？</p>
+<p><strong>注：</strong> 在迭代过程中允许出现超过一百万的项。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/12/22/Kob5gNMDta6FRzc.png" alt="image-20201222232123458" style="zoom:50%;" /><img src="https://i.loli.net/2020/12/23/a9nxTmvY8LuSsP6.png" alt="image-20201223155823595" style="zoom:67%;" /></p>
+<h2 id="8-大和"><a href="#8-大和" class="headerlink" title="8.大和"></a>8.<strong>大和</strong></h2><blockquote>
+<p>求以下一百个50位数的和的前十位数字。</p>
+<p>37107287533902102798797998220837590246510135740250 46376937677490009712648124896970078050417018260538 </p>
+<p>***************************************************************</p>
+<p>72107838435069186155435662884062257473692284509516 20849603980134001723930671666823555245252804609722 53503534226472524250874054075591789781264330331690</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/12/23/rmcq4eAOE1DTfRl.png" alt="image-20201223113220059" style="zoom:50%;" /><img src="https://i.loli.net/2020/12/23/X2tuQeiIjFDH5fC.png" alt="image-20201223134358534" style="zoom: 80%;" /></p>
+<h2 id="8-1-两大数乘法"><a href="#8-1-两大数乘法" class="headerlink" title="8.1 两大数乘法"></a>8.1 两大数乘法</h2><p><img src="https://i.loli.net/2020/12/26/tKcB3dqvAozuSyQ.png" alt="image-20201226212357694"></p>
+<h2 id="9-1000位斐波那契数"><a href="#9-1000位斐波那契数" class="headerlink" title="9. 1000位斐波那契数"></a>9. 1000位斐波那契数</h2><blockquote>
+<p>斐波那契数列是按如下递归定义的数列：<br>F1=1 F2=1 Fn=Fn−1+Fn−2</p>
+<p>因此斐波那契数列的前12项分别是：<br>F1=1 F2=1 F3=2 F4=3 F5=5 F6=8 F7=13 F8=21 F9=34 F10=55 F11=89 F12=144</p>
+<p>第一个包含三位数字的是第12项 <code>F12</code>。</p>
+<p>在斐波那契数列中，第一个包含1000位数字的是第几项？ </p>
+</blockquote>
+<img src="https://i.loli.net/2020/12/26/lntzcHwSDhyAKWx.png" alt="image-20201226215813538" style="zoom:80%;" />
+
+<img src="https://i.loli.net/2020/12/26/DecFWRTrhA58gV6.png" alt="image-20201226215833139" style="zoom:80%;" />
+
+<h2 id="10-网格路径"><a href="#10-网格路径" class="headerlink" title="10. 网格路径"></a>10. <strong>网格路径</strong></h2><blockquote>
+<p>从一个2×2网格的左上角出发，若只允许向右或向下移动，则恰好有6条抵达右下角的路径。</p>
+<p><img src="https://i.loli.net/2020/12/26/ngXQ5fF1BctmdJv.png" alt="image-20201226213353263"></p>
+<p>对于20×20网格，这样的路径有多少条？</p>
+</blockquote>
+<p><code>法一</code><img src="https://i.loli.net/2020/12/26/79YdO42kPQUEhGX.png" alt="image-20201226222331931" style="zoom:67%;" /></p>
+<p><code>法二</code><img src="https://i.loli.net/2020/12/26/vh43EmTcG6OwkBX.png" alt="image-20201226224844848" style="zoom:67%;" /></p>
+<h2 id="11-最大路径和-I"><a href="#11-最大路径和-I" class="headerlink" title="11.最大路径和 I"></a>11.<strong>最大路径和 I</strong></h2><blockquote>
+<p>从如下的数字三角形的顶端出发，不断移动到下一行与其相邻的元素，所能得到的最大路径和是23。<br><strong>3</strong><br><strong>7</strong> 4<br>2 <strong>4</strong> 6<br>8 5 <strong>9</strong> 3<br>如上图，最大路径和为3+7+4+9=23。<br>从如下的数字三角形顶端出发到达底部，求所能得到的最大路径和。<br>75<br>95 64<br>17 47 82<br>18 35 87 10<br>20 04 82 47 65<br>19 01 23 75 03 34<br>88 02 77 73 07 63 67<br>99 65 04 28 06 16 70 92<br>41 41 26 56 83 40 80 70 33<br>41 48 72 33 47 32 37 16 94 29<br>53 71 44 65 25 43 91 52 97 51 14<br>70 11 33 28 77 73 17 78 39 68 17 57<br>91 71 52 38 17 14 91 43 58 50 27 29 48<br>63 66 04 68 89 53 67 30 73 16 69 87 40 31<br>04 62 98 27 23 09 70 98 73 93 38 53 60 04 23</p>
+</blockquote>
+<p><code>法一从上往下</code><img src="https://i.loli.net/2020/12/26/Gik4o2DSzmjXc9I.png" alt="image-20201226230538178" style="zoom:67%;" /></p>
+<p><code>法二从下往上</code><img src="https://i.loli.net/2020/12/26/lkjLayQIgcFbTA6.png" alt="image-20201226231436315" style="zoom:67%;" /></p>
+<h2 id="12-树塔狂想曲"><a href="#12-树塔狂想曲" class="headerlink" title="12.树塔狂想曲"></a>12.树塔狂想曲</h2><blockquote>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>相信大家都学过树塔问题，题目很简单求最大化一个三角形数塔从上往下走的路径和。走的规则是：（i，j）（i，j） 号点只能走向 （i+1，j）（i+1，j） 或者 （i+1，j+1）（i+1，j+1）。如下图是一个数塔，映射到该数塔上行走的规则为：从左上角的点开始，向下走或向右下走直到最底层结束。</p>
+<p>1</p>
+<p>3 8</p>
+<p>2 5 0</p>
+<p>1 4 3 8</p>
+<p>1 4 2 5 0</p>
+<p>路径最大和是 1+8+5+4+4=221+8+5+4+4=22，1+8+5+3+5=221+8+5+3+5=22 或者 1+8+0+8+5=221+8+0+8+5=22。</p>
+<p>小 S 觉得这个问题 so easy。于是他提高了点难度，他每次 ban 掉一个点（即规定哪个点不能经过），然后询问你不走该点的最大路径和。当然他上一个询问被 ban 掉的点过一个询问会恢复（即每次他在原图的基础上 ban 掉一个点，而不是永久化的修改）。</p>
+<hr>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行包括两个正整数 N,M 分别表示数塔的高和询问次数。</p>
+<p>以下 N 行，第 i 行包括用空格隔开的 i−1 个数，描述一个高为 N 的数塔。</p>
+<p>而后 M 行，每行包括两个数 X,Y，表示第 X 行第Y 列的数塔上的点被小 S ban 掉，无法通行。</p>
+<p>（由于读入数据较大，请使用较为快速的读入方式）</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>M 行每行包括一个非负整数，表示在原图的基础上 ban 掉一个点后的最大路径和，如果被 ban 掉后不存在任意一条路径，则输出 −1。</p>
+<p>样例输入<br>5 3<br>1<br>3 8<br>2 5 0<br>1 4 3 8<br>1 4 2 5 0<br>2 2<br>5 4<br>1 1<br>样例输出<br>17<br>22<br>-1</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max_n 1005</span></span><br><span class="line"><span class="keyword">int</span> num[max_n][max_n], utd[max_n][max_n], dtu[max_n][max_n], ans[max_n][max_n], max_ind[max_n], sec[max_n];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n, m;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;n, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; <span class="comment">//输入数据</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;num[i][j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; <span class="comment">//从上往下的最大距离</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            utd[i][j] = num[i][j] + max(utd[i - <span class="number">1</span>][j - <span class="number">1</span>], utd[i - <span class="number">1</span>][j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = n; i &gt; <span class="number">0</span>; i--) &#123; <span class="comment">// 从下往上的最大距离</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            dtu[i][j] = num[i][j] + max(dtu[i + <span class="number">1</span>][j + <span class="number">1</span>], dtu[i + <span class="number">1</span>][j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; <span class="comment">// 经过某个点能达到的最大距离</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            ans[i][j] = utd[i][j] + dtu[i][j] - num[i][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++) &#123; <span class="comment">// 求每一行的最大次大值</span></span><br><span class="line">        <span class="keyword">int</span> m1 = <span class="number">0</span>, m2 = <span class="number">0</span>, ind = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (ans[i][j] &gt; m1) &#123;</span><br><span class="line">                m2 = m1;</span><br><span class="line">                m1 = ans[i][j];</span><br><span class="line">                ind = j;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(ans[i][j] &gt; m2) &#123;</span><br><span class="line">                m2 = ans[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        max_ind[i] = ind; <span class="comment">// 第i行最大值对应的ind</span></span><br><span class="line">        sec[i] = m2; <span class="comment">//第i行的次大值</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123; <span class="comment">//ban掉最大值就输出次大值</span></span><br><span class="line">        <span class="keyword">int</span> x, y;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;x, &amp;y);</span><br><span class="line">        <span class="keyword">if</span> (x == <span class="number">1</span> &amp;&amp; y == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;-1\n&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (max_ind[x] == y) &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, sec[x]);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, dtu[<span class="number">1</span>][<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/30/Test-Passage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大鹏的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/30/Test-Passage/" class="post-title-link" itemprop="url">大鹏的个人博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-12-30 15:55:10 / Modified: 17:22:45" itemprop="dateCreated datePublished" datetime="2020-12-30T15:55:10+08:00">2020-12-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="个人博客搭建"><a href="#个人博客搭建" class="headerlink" title="个人博客搭建"></a>个人博客搭建</h1><h2 id="Hexo搭建博客环境"><a href="#Hexo搭建博客环境" class="headerlink" title="Hexo搭建博客环境"></a>Hexo搭建博客环境</h2><h3 id="下载需要的软件"><a href="#下载需要的软件" class="headerlink" title="下载需要的软件"></a>下载需要的软件</h3><p><code>node.js</code> : 用于运行Hexo环境</p>
+<ul>
+<li>node   基于 Chrome V8 引擎的 JavaScript运行环境</li>
+<li>npm    默认下载的包管理器  </li>
+</ul>
+<p><code>git</code> :  用于将配置文件发布到运程仓库GitHub中，方便别人浏览。</p>
+<h3 id="正式开始搭建Hexo"><a href="#正式开始搭建Hexo" class="headerlink" title="正式开始搭建Hexo"></a>正式开始搭建Hexo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli   #全局的安装一个Hexo框架</span><br><span class="line">mkdir blog   # 建一个放blog的目录，之后如果出错就直接删除这个文件夹就行</span><br><span class="line"><span class="meta">#</span><span class="bash">下面的操作都在blog文件夹下执行</span></span><br><span class="line">	hexo init   #初始化一个博客 </span><br><span class="line">	hexo server  #打开服务  【也可直接用hexo s】</span><br><span class="line">	hexo n &quot;我的第一篇博客&quot;  # 写博客【生成的博客位于 blog/source/_posts】</span><br><span class="line"><span class="meta">#</span><span class="bash">进入blog/<span class="built_in">source</span>/_posts 下开心的编辑博客</span></span><br><span class="line"><span class="meta">#</span><span class="bash">编辑完毕，退回到blog文件夹下执行以下命令</span></span><br><span class="line">hexo clean  # 删除database（数据库）</span><br><span class="line">hexo g  #生成【generate】</span><br></pre></td></tr></table></figure>
+<h3 id="将博客部署到GitHub上"><a href="#将博客部署到GitHub上" class="headerlink" title="将博客部署到GitHub上"></a>将博客部署到GitHub上</h3><ol>
+<li>新建一个仓库【命名规则：<code>用户名.github.io</code>】</li>
+<li>安装git部署的插件：hexo-deployer-git</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git  # 安装git部署的插件：hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>修改blog下的_config.yml文件</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">尾部修改deploy(部署配置)</span></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/zzpbigpeng/zzpbigpeng.github.io.git   # 仓库地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>部署到远端</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d  # d = deploy  </span><br></pre></td></tr></table></figure>
+<h2 id="更新博客流程"><a href="#更新博客流程" class="headerlink" title="更新博客流程"></a>更新博客流程</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">以下操作要在root下执行</span></span><br><span class="line">hexo server  #打开服务  【也可直接用hexo s】</span><br><span class="line">hexo n &quot;xxx&quot;  # 写博客【生成的博客位于 blog/source/_posts】</span><br><span class="line">hexo clean  # 删除database（数据库）</span><br><span class="line">hexo g  #生成【generate】</span><br><span class="line">hexo d  # d = deploy</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/30/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大鹏的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/30/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-12-30 15:43:42" itemprop="dateCreated datePublished" datetime="2020-12-30T15:43:42+08:00">2020-12-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
